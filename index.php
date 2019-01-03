@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+<?php include "functions.php"; ?>
 <head>
-	<title>first page</title>
+	<title>second page</title>
 </head>
 <body>
-	<h1><?= "Hello World";?></h1>
+	<h1>
+		<?= show_string(); ?>	
+	</h1>
 </body>
 </html>
