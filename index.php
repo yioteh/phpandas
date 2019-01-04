@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html>
-<?php include "functions.php"; ?>
-<head>
-	<title>second page</title>
-</head>
-<body>
-	<h1>
-		<?= show_string(); ?>	
-	</h1>
-</body>
-</html>
+<?php
+
+require 'Task.php';
+
+require 'database/Connection.php';
+
+require 'database/QueryBuilder.php';
+
+require 'functions.php';
+
+$pdobj = Connection::make();
+
+$query = new QueryBuilder($pdobj);
+
+$tasks1 = fetchAllTasks($pdobj); 		// rename to tasks when test
+$tasks = $query::selectAll('todos'); 	// rename to tasks1 when need to test other
+
+require 'index.view.php';
+
+?>
