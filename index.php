@@ -10,10 +10,11 @@ require 'functions.php';
 
 $pdobj = Connection::make();
 
-$query = new QueryBuilder($pdobj);
+// $tasks = fetchAllTasks($pdobj);		// uncomment this and comment out 2 and 3 to check old code
 
-$tasks1 = fetchAllTasks($pdobj); 		// rename to tasks when test
-$tasks = $query::selectAll('todos'); 	// rename to tasks1 when need to test other
+$query = new QueryBuilder($pdobj);		// 2
+
+$tasks = $query->selectAll('todos'); 	// 3
 
 require 'index.view.php';
 
