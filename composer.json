@@ -1,0 +1,13 @@
+{
+    "name": "yioteh/phpandas",
+    "description": "PHP Pandas",
+    "authors": [
+        {
+            "name": "Artur V",
+            "email": "myname@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "1.12.0"
+    }
+}
