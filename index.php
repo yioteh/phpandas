@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
-<?php include "functions.php"; ?>
+<html lang="en">
+<?php require_once "functions.php"; ?>
 <head>
-	<title>second page</title>
+    <title>second page</title>
 </head>
 <body>
-	<h1>
-		<?= show_string(); ?>	
-	</h1>
+<h1>
+    <?= show_string(); ?>
+</h1>
 </body>
 </html>
