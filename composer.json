@@ -8,7 +8,6 @@
         }
     ],
     "require": {
-        "monolog/monolog": "1.12.0",
         "illuminate/database": "^5.7"
     }
 }
